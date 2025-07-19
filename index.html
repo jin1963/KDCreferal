@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KDC Referral Program</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+  <script src="config.js"></script>
+  <script src="abi.js"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>🚀 KDC Referral Program</h1>
+    <p id="status">🔌 กรุณาเชื่อมต่อ Wallet</p>
+
+    <button id="connectWallet">🔗 Connect Wallet</button>
+
+    <div class="ref-section" style="display: none;">
+      <p>🔗 Referral Link ของคุณ:</p>
+      <input type="text" id="refLink" readonly />
+      <button onclick="copyRef()">📋 คัดลอกลิงก์</button>
+    </div>
+
+    <div class="register-section" style="display: none;">
+      <p>หากคุณได้รับลิงก์แนะนำ:</p>
+      <input type="text" id="referrerAddress" placeholder="Referrer Address" />
+      <button id="registerReferrer">🎫 ลงทะเบียนผู้แนะนำ</button>
+    </div>
+
+    <div class="purchase-section" style="display: none;">
+      <p>📥 ใส่จำนวน USDT ที่ใช้ซื้อ:</p>
+      <input type="number" id="purchaseAmount" placeholder="จำนวน USDT" />
+      <button id="recordPurchase">💰 บันทึกการซื้อ & แจก KJC</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
