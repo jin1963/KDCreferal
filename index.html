@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>KDC Referral</title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.10.0/dist/web3.min.js"></script>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>KJC – The Reality Coin</h1>
+    <p>🎁 แชร์ลิงก์แนะนำของคุณเพื่อรับรางวัลเมื่อเพื่อนซื้อเหรียญ</p>
+
+    <button id="connectBtn">🔗 เชื่อมต่อ Wallet & รับลิงก์แนะนำ</button>
+
+    <div id="refBox" style="display:none;">
+      <p>ลิงก์แนะนำของคุณ:</p>
+      <input type="text" id="refLink" readonly />
+      <button onclick="copyLink()">📋 คัดลอกลิงก์</button>
+    </div>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
